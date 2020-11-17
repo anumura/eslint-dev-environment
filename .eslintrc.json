@@ -1,0 +1,27 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": ["plugin:react/recommended","airbnb-base", "eslint:recommended", "prettier"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12
+    },
+    "plugins": [
+        "react",
+				"@typescript-eslint",
+				"prettier"
+    ],
+    "rules": {
+						"no-console": "off",
+						"quotes": ["error", "double"],
+						"semi": [2, "always"],
+						"allowForLoopAfterthoughts": true,
+						"prettier/prettier": ["error"]
+    }
+}
